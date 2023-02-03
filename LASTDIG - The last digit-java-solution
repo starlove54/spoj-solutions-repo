@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.math.BigInteger;
+import java.util.Scanner;
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		    Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        while (t-- > 0) {
+            BigInteger a = s.nextBigInteger();
+            BigInteger b = s.nextBigInteger();
+            BigInteger lastdigit = a.modPow(b, new BigInteger("10"));
+            System.out.println(lastdigit);
+        }
+	}
+} 
