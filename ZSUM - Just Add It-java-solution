@@ -1,8 +1,11 @@
+import java.util.*;
+import java.lang.*;
 import java.util.Scanner;
-
-class ZSum {
-    final static int M = 10000007;
-
+ 
+class Main
+{ 
+final static int M = 10000007;
+ 
     public static long binaryExpIterative(long a, int b, int M) {
         long ans = 1;
         a %= M;
@@ -16,8 +19,9 @@ class ZSum {
         return ans;
     }
 
-    public static void main(String[] args) throws java.lang.Exception {
-        Scanner sc = new Scanner(System.in);
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		       Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
             int n = sc.nextInt();
             int k = sc.nextInt();
@@ -28,6 +32,6 @@ class ZSum {
             long ans4 = binaryExpIterative(n, n, M);
             System.out.println(((ans1 + ans2) % M + (ans3 + ans4) % M) % M);
         }
-
-    }
-}
+ 
+	}
+} 
